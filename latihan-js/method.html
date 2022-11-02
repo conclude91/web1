@@ -1,0 +1,24 @@
+<html>
+
+<head>
+    <title>Latihan JS</title>
+</head>
+
+<body>
+    <p id="date">Ini akan menampilkan tanggal hari ini</p>
+    <button onclick="document.getElementById('date').innerHTML=Date();">Generate Date</button>
+    <br /><br />
+    <select id="hoby" onchange="selectedHoby()">
+        <option value="lari">Lari</option>
+        <option value="rebahan">Rebahan</option>
+    </select>
+    <p id="myHoby">Ini akan menampilkan hoby saya</p>
+</body>
+<script lang="javascript">
+    function selectedHoby() {
+        var myHoby = document.getElementById('hoby').value;
+        document.getElementById('myHoby').innerHTML = 'Hoby saya adalah '+myHoby;
+    }
+</script>
+
+</html>
